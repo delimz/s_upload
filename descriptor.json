@@ -1,12 +1,12 @@
 {
-    "name": "ratseg",
+    "name": "dummy upload",
     "container-image": {
-        "image": "delimz/s_ratseg",
+        "image": "delimz/s_upload",
         "type": "singularity"
     },
     "schema-version": "cytomine-0.1",
     "description": "optional description",
-    "command-line": "CYTOMINE_HOST CYTOMINE_PUBLIC_KEY CYTOMINE_PRIVATE_KEY CYTOMINE_ID_PROJECT CYTOMINE_ID_SOFTWARE SLICE_TERM MODEL-NAME MODEL-TYPE RESIDUAL ",
+    "command-line": "CYTOMINE_HOST CYTOMINE_PUBLIC_KEY CYTOMINE_PRIVATE_KEY CYTOMINE_ID_PROJECT CYTOMINE_ID_SOFTWARE FILENAME URL ",
     "inputs": [
 	    {
 	      "id": "cytomine_host",
