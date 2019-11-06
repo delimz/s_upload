@@ -13,7 +13,7 @@ if __name__ == '__main__':
         url = cj.parameters.url
 
         response = urllib.request.urlopen(url)
-        with open(filename,'w') as f:
+        with open(filename,'wb') as f:
             f.write(response.read())
 
         AttachedFile(
