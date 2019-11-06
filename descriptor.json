@@ -1,5 +1,5 @@
 {
-    "name": "dummy upload",
+    "name": "upload",
     "container-image": {
         "image": "delimz/s_upload",
         "type": "singularity"
