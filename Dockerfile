@@ -4,4 +4,4 @@ COPY upload.py /app/
 
 WORKDIR /app
 
-ENTRYPOINT ["python3","/app/hello.py"]
+ENTRYPOINT ["python3","/app/upload.py"]
