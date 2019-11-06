@@ -1,6 +1,7 @@
 import cytomine
 import urllib.request
 import sys
+from cytomine.models import AttachedFile
 
 if __name__ == '__main__':
     print(sys.argv[1:])
