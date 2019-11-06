@@ -3,6 +3,7 @@ import urllib.request
 import sys
 
 if __name__ == '__main__':
+    print(sys.argv[1:])
 
     with cytomine.CytomineJob.from_cli(sys.argv[1:]) as cj:
         filename=None
