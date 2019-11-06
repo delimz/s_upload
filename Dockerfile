@@ -1,4 +1,4 @@
-FROM cytomine/base
+FROM cytomine/software-python3-base
 
 COPY upload.py /app/
 
