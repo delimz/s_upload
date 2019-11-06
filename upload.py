@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
         AttachedFile(
                 cj.job,
-                domainIdent=cj.job.id
+                domainIdent=cj.job.id,
                 filename=filename,
                 domainClassName="be.cytomine.processing.Job"
         ).upload()
