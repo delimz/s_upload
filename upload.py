@@ -1,10 +1,12 @@
 import cytomine
 import urllib.request
 import sys
+import os
 from cytomine.models import AttachedFile
 
 if __name__ == '__main__':
     print(sys.argv[1:])
+    base_path = "{}".format(os.getenv("HOME"))
 
     with cytomine.CytomineJob.from_cli(sys.argv[1:]) as cj:
         filename=None
@@ -20,7 +22,7 @@ if __name__ == '__main__':
         AttachedFile(
                 cj.job,
                 domainIdent=cj.job.id,
-                filename=filename,
+                filename=os.path.join(base_path,filename)
                 domainClassName="be.cytomine.processing.Job"
         ).upload()
 
