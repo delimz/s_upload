@@ -22,7 +22,7 @@ if __name__ == '__main__':
         AttachedFile(
                 cj.job,
                 domainIdent=cj.job.id,
-                filename=os.path.join(base_path,filename)
+                filename=os.path.join(base_path,filename),
                 domainClassName="be.cytomine.processing.Job"
         ).upload()
 
