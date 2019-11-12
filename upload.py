@@ -12,12 +12,15 @@ if __name__ == '__main__':
         filename=None
         if cj.parameters.filename is not None:
             filename=cj.parameters.filename
+        else:
+            filename=cj.parameters.url.split("/")[-1]
 
         url = cj.parameters.url
 
         response = urllib.request.urlopen(url)
         with open(filename,'wb') as f:
             f.write(response.read())
+        print(os.path.join(base_path,filename))
 
         AttachedFile(
                 cj.job,

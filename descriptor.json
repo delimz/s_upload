@@ -59,11 +59,12 @@
 	      "type": "Number"
 	    },
 	    {
-	      "id": "cytomine_verbosity",
+	      "id": "cytomine_log_level",
 	      "value-key": "@ID",
 	      "command-line-flag": "--@id",
 	      "name": "Log verbosity level",
-	      "description": "Type and values depends on your software implementation, not set by server and must be optional",
+	      "description": "Verbosity level among ['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']",
+	      "value-choices": ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
 	      "optional": true,
 	      "type": "String"
 	    },
